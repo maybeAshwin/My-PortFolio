@@ -103,9 +103,9 @@ img{
 
 .skills ul{
     margin-top: 20px;
-    margin-left :0px ;
+    margin-left :100px ;
     color: #fff;
-    width: 100%;
+    width: 30%;
     position: fixed;
     display: flex;
     align-items: center;
@@ -116,6 +116,6 @@ img{
 }
 
 .skills img{
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
 }
