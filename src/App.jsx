@@ -4,10 +4,13 @@ import Profile from './Components/Profile/Profile'
 
 const App = () => {
   return (
-    <div>
-        <Navbar/>  
-        <Profile/>  
-    </div>
+         <Router>
+      <Routes>
+      <Route path="/" element={<><Navbar /></>} />
+      <Route path="/Profile" element={<><Profile /></>} />
+      </Routes>
+    </Router> 
+
   )
 }
 
