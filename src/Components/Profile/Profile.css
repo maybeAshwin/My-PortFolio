@@ -10,14 +10,16 @@
     justify-content: space-between;
 
 }
-
-p{
+body{
+    background-color: #263238;
+}
+.profile-info p{
     color: #fff;
 }
-h3{
+.profile-text h3{
     color: #fff;
 }
-h1{
+.profile-text h1{
     color: #03A9F4;
 }
 
@@ -98,7 +100,7 @@ img{
 .skills h1{
     margin-left: 10%;
     margin-top: 2%;
-
+    color: #03A9F4;
 }
 
 .skills ul{

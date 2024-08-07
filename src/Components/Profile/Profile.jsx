@@ -8,6 +8,7 @@ import html from '../../Assets/html.png';
 import css from '../../Assets/css.png';
 import react from '../../Assets/react.png';
 import flutter from '../../Assets/flutter.png';
+import dart from '../../Assets/dart.png';
 
 const Profile = () => {
   return (
@@ -61,6 +62,7 @@ const Profile = () => {
           <li><img src={css} alt="CSS" /></li>
           <li><img src={flutter} alt="Flutter" /></li>
           <li><img src={react} alt="React" /></li>
+          <li><img src={dart} alt="Dart" /></li>
         </ul>
       </div>
     </div>
