@@ -15,25 +15,27 @@ const Resume = () => {
         <div className="leftside">
           
           <p>Self motivated and enthusiastic B.Tech
-            student with a passion in coding . <br />I have skills
+            student with a passion in coding .I have skills
             in Mobile app development and Web
             development. Proficient in using Flutter ,Dart,
             HTML, JavaScript, CSS and React to develop
             effective applications according to client
             requirements.
             </p>
+            <h2>Skills</h2>
+            <li>React</li>
+            <li>Flutter</li>
+            <li>Web Devlopment</li>
+            <li>Dart</li>
+
+            <h2>Education</h2>
+            <li><h3>RIT Kottyam</h3><br /><p>2022-2025 <br />B.Tech <br />Kottayam,Kerala</p></li>
+            <li><h3>GPTC PALA</h3><br /><p>2019-2022 <br />DIploma In Computer Engineering <br />Kottayam,Kerala</p></li>
+            <li><h3>OLL HSS Uzhavoor</h3><br /><p>2017-2019 <br />Higher Secondary <br />Kottayam,Kerala</p></li>
+
         </div>
         <div className="divider"></div>
-        <div className="rightside">
-            <p>What is Lorem Ipsum?
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-            unknown printer took a galley of type and scrambled it to make a type specimen book. It h
-            as survived not only five centuries, but also the leap into electronic typesetting, remaining e
-            ssentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lo
-            rem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including ve
-            rsions of Lorem Ipsum.</p>
-        </div>
+        
        </div>
     </div>
   )
