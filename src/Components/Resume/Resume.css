@@ -97,21 +97,34 @@
     margin: 5rem;
   }
   
-  .rightside {
-    background-color: #263238;
-  }
-
-  .divider {
-    width: 1.5rem;
-    background-color: #00ff48; 
+ 
+.divider {
+    
+    height: 2px;
+    width: 100%;
+    background-color: #274452; 
   }
 
 .leftside li{
     list-style: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #fff;
 }
 
 .leftside h2{
     color: #03A9F4;
 }
+
+.education{
+    display: flex;
+    justify-content: space-between;
+}
+
+.education h3{
+    font-size: 1.1rem;
+}
+
+.education p{
+    font-size: 1rem;
+}
+
