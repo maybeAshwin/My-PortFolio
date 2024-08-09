@@ -1,10 +1,6 @@
 import React from 'react'
 import './Resume.css'
 import profile_pic from '../../Assets/profile-pic.png'
-import linkedin from '../../Assets/linkedin.png';
-import github from '../../Assets/github.png';
-import leetcode from '../../Assets/leetcode.png';
-
 const Resume = () => {
   return (
     <div  className='wrapper'>
@@ -15,8 +11,7 @@ const Resume = () => {
             <img src={profile_pic} alt="profile_pic"  />
         </div>
        </div>
-        <div className="leftside">
-          
+        <div className="leftside">          
           <p>Self motivated and enthusiastic B.Tech
             student with a passion in coding .I have skills
             in Mobile app development and Web
@@ -26,8 +21,7 @@ const Resume = () => {
             requirements.</p>
             <br />
             <div className="divider"></div>
-            <br />
-            
+            <br />            
             <h2>Skills</h2><br />
               <li>React</li>
               <li>Flutter</li>
@@ -38,8 +32,7 @@ const Resume = () => {
             <br />
             <h2>Education</h2>
             <br />
-            <div className="education">
-              
+            <div className="education">      
                 <li><h3>RIT KOTTAYAM</h3><br /><p>2022-2025 <br />B.Tech <br />Kottayam,Kerala</p></li>
                 <li><h3>GPTC PALA</h3><br /><p>2019-2022 <br />DIploma In Computer<br />Engineering <br />Kottayam,Kerala</p></li>
                 <li><h3>OLL HSS UZHAVOOR</h3><br /><p>2017-2019 <br />Higher Secondary <br />Kottayam,Kerala</p></li>
@@ -51,7 +44,6 @@ const Resume = () => {
               <a href="https://www.linkedin.com/in/ashwin-joseph-">Linked In</a><br />
               <a href="https://github.com/maybeAshwin">Github</a><br />
               <a href="https://leetcode.com/u/ashwinjoseph-/">Leet Code</a><br />
-
             </div>  
 
             <div className="projects">

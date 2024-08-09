@@ -22,8 +22,6 @@ body{
 .profile-text h1{
     color: #03A9F4;
 }
-
-
 .profile-info{
     margin-top: 20px;
     display: flex;
@@ -36,14 +34,12 @@ body{
 
 
 }
-
 .profile-image img{
     width: 200px;
     height: 200px;
     
 
 }
-
 .Download{
     font-weight: 900;
     margin-top: 40px;
@@ -68,7 +64,6 @@ img{
     width: 30px;
     height: 30px;
 }
-
 .linkedin{
     margin-top: 40px;
     width: 30px;
@@ -76,7 +71,6 @@ img{
     border: 0;
     outline: 0;
 }
-
 .github{
     margin-top: 40px;
     width: 30px;
@@ -84,7 +78,6 @@ img{
     border: 0;
     outline: 0;
 }
-
 .leetcode{
     margin-top: 40px;
     width: 30px;
@@ -92,17 +85,14 @@ img{
     border: 0;
     outline: 0;
 }
-
 .skills{
     width: 100%;
 }
-
 .skills h1{
     margin-left: 10%;
     margin-top: 2%;
     color: #03A9F4;
 }
-
 .skills ul{
     margin-top: 20px;
     margin-left :100px ;
@@ -111,12 +101,8 @@ img{
     position: fixed;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-
-
-    
+    justify-content: space-evenly;   
 }
-
 .skills img{
     width: 40px;
     height: 40px;

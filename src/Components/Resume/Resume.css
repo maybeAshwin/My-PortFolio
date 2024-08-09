@@ -2,7 +2,6 @@
     align-items: center;
     display: block;
     width: 60rem;
-    /* height: 70rem; */
     background: #263238;
     border: 2px solid #03A9F4;
     min-height: 100vh;
@@ -10,18 +9,15 @@
     margin-top: 6rem;
     margin-bottom: 3rem;
     box-shadow: 4px 4px 30px rgba(109, 140, 156, 1);
-    
 }
 .content h1{
     color: #00ccff;
     margin: 3rem 10rem 2rem;
 }
-
 .content p{
     color: #fff;
     font-size: 1.2rem;
 }
-
 .box{
     margin-left: 30rem;
     position: relative;
@@ -37,12 +33,10 @@
     inset: -10px 140px;
     background: linear-gradient(315deg, #03A9F4, #d400d4);
     transition: 0.5s;
-    animation: animate 4s linear infinite;
-    
+    animation: animate 4s linear infinite;  
 }
 .box:hover::before{
     inset: -20px 0px;
-
 }
 
 @keyframes animate{
@@ -53,7 +47,6 @@
         transform: rotate(360deg);
     }
 }
-
 .box::after{
     content: "";
     position: absolute;
@@ -68,7 +61,6 @@
     border: 6px solid #263238;
     z-index: 3;
     border-radius: 50%;
-
 }
 .image img{
     position: absolute;
@@ -82,72 +74,40 @@
     overflow: hidden;
     border-radius: 50%;
 }
-
 .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   .left-side, .right-side {
     flex: 1;
     padding: 20px;
   }
-
 .leftside {
     background-color: #263238;
     margin: 5rem;
   }
-  
- 
 .divider {
     
     height: 2px;
     width: 100%;
     background-color: #274452; 
   }
-
 .leftside li{
     list-style: none;
     font-size: 1.1rem;
     color: #fff;
 }
-
 .leftside h2{
     color: #03A9F4;
 }
-
 .education{
     display: flex;
     justify-content: space-between;
 }
-
 .education h3{
     font-size: 1.1rem;
 }
-
 .education p{
     font-size: 1rem;
-}
-
-/* .social a{ 
-    color: #fff;
-    font-size: 1.1rem;
-}
-
-.projects a{
-    color: #fff;
-    font-size: 1.1rem;
-}
-
-.certificates a{
-    color: #03A9F4;
-    font-size: 1.1rem;
-} */
-
-.leftside a{
-    color: #fff;
-}
-.leftside a:hover{
-    color: #03A9F4;
 }
