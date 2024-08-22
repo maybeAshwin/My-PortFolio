@@ -33,7 +33,7 @@ const Profile = () => {
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/ashwin-joseph-" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/ashwinjoseph-" target="_blank" rel="noopener noreferrer">
               <button className='linkedin'>
                 <img src={linkedin} alt="LinkedIn" />
               </button>

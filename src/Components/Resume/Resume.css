@@ -91,7 +91,8 @@
     
     height: 2px;
     width: 100%;
-    background-color: #274452; 
+    background-color: #274452;
+     
   }
 .leftside li{
     list-style: none;
@@ -110,4 +111,25 @@
 }
 .education p{
     font-size: 1rem;
+}
+
+.projects a{
+    list-style: none;
+    font-size: 1.1rem;
+    color: #fff;
+}
+.social{
+    list-style: none;
+    font-size: 1.1rem;
+    color: #fff;
+}
+.certificates{
+
+    list-style: none;
+    font-size: 1.1rem;
+    color: #fff;
+}
+.certificates a:hover::before{
+    color: red;
+    font-size: 6rem;
 }
