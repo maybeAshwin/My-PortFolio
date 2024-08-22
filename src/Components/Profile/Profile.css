@@ -138,6 +138,9 @@ img {
       gap: 15px;
       margin-left: 1px;
   }
+  .profile{
+    margin-top: 0px;
+  }
 
   .skills ul {
       gap: 10px;
