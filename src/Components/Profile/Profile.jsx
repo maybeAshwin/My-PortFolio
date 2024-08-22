@@ -28,7 +28,7 @@ const Profile = () => {
           <li>
             <a href="/resume.pdf" download>
               <button className='Download'>
-                Download resume <img className='download-img' src={downloadlogo} alt="Download" />
+                 <img className='download-img' src={downloadlogo} alt="Download" />
               </button>
             </a>
           </li>

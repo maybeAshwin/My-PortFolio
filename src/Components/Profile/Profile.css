@@ -67,6 +67,9 @@ body {
   color: #263238;
 }
 
+.profile .Download::before{
+  content: 'Download Resume';
+}
 .download-img {
   width: 20px;
   height: 15px;
@@ -139,7 +142,7 @@ img {
       margin-left: 1px;
   }
   .profile{
-    margin-top: 0px;
+    margin-top: -50px;
   }
 
   .skills ul {
@@ -172,6 +175,9 @@ img {
 
   .Download {
       padding: 8px 15px;
+  }
+  .profile .Download::before{
+    content: 'Resume';
   }
 
   .skills ul {

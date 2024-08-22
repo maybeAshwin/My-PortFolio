@@ -1,3 +1,7 @@
+*{
+  margin: 10px;
+}
+
 .contact-wrapper{
     align-items: center;
     display: flex;
