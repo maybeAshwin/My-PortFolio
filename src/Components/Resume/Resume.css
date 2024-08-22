@@ -1,68 +1,97 @@
-.content{
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Wrapper styling */
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Content styling */
+  .content {
     align-items: center;
     display: block;
-    width: 60rem;
+    width: 100%;
+    max-width: 60rem;
     background: #263238;
     border: 2px solid #03A9F4;
     min-height: 100vh;
     border-radius: 20px;
-    margin-top: 6rem;
-    margin-bottom: 3rem;
+    margin: 6rem auto 3rem;
     box-shadow: 4px 4px 30px rgba(109, 140, 156, 1);
-}
-.content h1{
+    padding: 20px;
+  }
+  
+  .content h1 {
     color: #00ccff;
-    margin: 3rem 10rem 2rem;
-}
-.content p{
+    margin: 3rem auto 2rem;
+    margin-left: 5rem;
+  }
+  
+  .content p {
     color: #fff;
     font-size: 1.2rem;
-}
-.box{
-    margin-left: 30rem;
+    
+  }
+  
+  /* Box containing the profile picture */
+  .box {
+    margin: 0 auto 2rem;
+    margin-left: 26rem;
     position: relative;
     width: 350px;
     height: 350px;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     overflow: hidden;
-}
-.box::before{
+  }
+  
+  .box::before {
     content: "";
     position: absolute;
     inset: -10px 140px;
-    background: linear-gradient(315deg, #03A9F4, #d400d4);
+    background: linear-gradient(315deg, #03a9f4, #d400d4);
     transition: 0.5s;
-    animation: animate 4s linear infinite;  
-}
-.box:hover::before{
+    animation: animate 4s linear infinite;
+  }
+  
+  .box:hover::before {
     inset: -20px 0px;
-}
-
-@keyframes animate{
-    0%{
-        transform: rotate(0deg);
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
     }
-    100%{
-        transform: rotate(360deg);
+    100% {
+      transform: rotate(360deg);
     }
-}
-.box::after{
+  }
+  
+  .box::after {
     content: "";
     position: absolute;
     inset: 6px;
     background: #263238;
     border-radius: 50%;
     z-index: 1;
-}
-.image{
+  }
+  
+  .image {
     position: absolute;
     inset: 30px;
     border: 6px solid #263238;
     z-index: 3;
     border-radius: 50%;
-}
-.image img{
+  }
+  
+  .image img {
     position: absolute;
     top: 0;
     left: 0;
@@ -73,63 +102,116 @@
     pointer-events: none;
     overflow: hidden;
     border-radius: 50%;
-}
-.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
-  .left-side, .right-side {
-    flex: 1;
-    padding: 20px;
-  }
-.leftside {
+  
+  /* Leftside styling */
+  .leftside {
     background-color: #263238;
-    margin: 5rem;
+    margin: 5rem auto;
+    color: #fff;
+    text-align: left;
   }
-.divider {
-    
+  
+  .leftside h2 {
+    color: #03a9f4;
+    margin-bottom: 1rem;
+  }
+  
+  .leftside li {
+    list-style: none;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .divider {
     height: 2px;
     width: 100%;
     background-color: #274452;
-     
+    margin: 20px 0;
   }
-.leftside li{
-    list-style: none;
-    font-size: 1.1rem;
-    color: #fff;
-}
-.leftside h2{
-    color: #03A9F4;
-}
-.education{
+  
+  .education {
     display: flex;
     justify-content: space-between;
-}
-.education h3{
+  }
+  
+  .education h3 {
     font-size: 1.1rem;
-}
-.education p{
+    margin-bottom: 0.5rem;
+  }
+  
+  .education p {
     font-size: 1rem;
-}
-
-.projects a{
-    list-style: none;
-    font-size: 1.1rem;
+  }
+  
+  .projects a,
+  .social a,
+  .certificates p {
     color: #fff;
-}
-.social{
-    list-style: none;
     font-size: 1.1rem;
-    color: #fff;
-}
-.certificates{
-
-    list-style: none;
-    font-size: 1.1rem;
-    color: #fff;
-}
-.certificates a:hover::before{
-    color: red;
-    font-size: 6rem;
-}
+    text-decoration: none;
+  }
+  
+  .projects a:hover,
+  .social a:hover,
+  .certificates a:hover {
+    text-decoration: none;
+    color: #00ccff;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .content {
+      width: 90%;
+      margin: 3rem auto;
+    }
+  
+    .box {
+      width: 250px;
+      height: 250px;
+    }
+  
+    .content h1 {
+      font-size: 2rem;
+      margin: 2rem auto 1rem;
+    }
+  
+    .content p {
+      font-size: 1rem;
+    }
+  
+    .leftside {
+      margin: 3rem auto;
+    }
+  
+    .education {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content h1 {
+      font-size: 1.5rem;
+      margin: 1rem auto;
+    }
+  
+    .box {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .content p {
+      font-size: 0.9rem;
+    }
+  
+    .leftside {
+      margin: 2rem auto;
+      padding: 10px;
+    }
+  
+    .divider {
+      margin: 15px 0;
+    }
+  }
+  

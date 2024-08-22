@@ -1,109 +1,187 @@
-.profile-text{
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    background-color: #263238;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Profile section styling */
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Profile text styling */
+  .profile-text {
     margin-top: 10%;
-    margin-left: 10%;
-}
-.profile ul{
-    width: 30%;
+    margin-bottom: 5%;
+    width: 90%;
+  }
+  
+  .profile-text h3 {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .profile-text h1 {
+    color: #03a9f4;
+    margin-bottom: 20px;
+  }
+  
+  .profile-info p {
+    color: #fff;
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+  
+  /* Profile buttons */
+  .profile ul {
     display: flex;
     list-style: none;
-    align-items: center;
-    justify-content: space-between;
-
-}
-body{
-    background-color: #263238;
-}
-.profile-info p{
-    color: #fff;
-}
-.profile-text h3{
-    color: #fff;
-}
-.profile-text h1{
-    color: #03A9F4;
-}
-.profile-info{
+   
+    gap: 10px;
     margin-top: 20px;
-    display: flex;
-    width: 100%;
-    justify-content:space-between;
-}
-.profile-image {
-    margin-right: 20%;
-    border-radius: 20px;
-
-
-}
-.profile-image img{
-    width: 200px;
-    height: 200px;
-    
-
-}
-.Download{
+  }
+  
+  .profile ul li {
+    margin: 0 10px;
+  }
+  
+  .Download {
     font-weight: 900;
-    margin-top: 40px;
     background: #263238;
-    color: #03A9F4;
+    color: #03a9f4;
     border-radius: 20px;
-    width: 200px;
-    height: 30px;
-    border-color: #03A9F4;
+    padding: 10px 20px;
+    border-color: #03a9f4;
     border-style: double;
-    outline:0;
-
-}
-.download-img{
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .Download:hover {
+    background: #03a9f4;
+    color: #263238;
+  }
+  
+  .download-img {
     width: 20px;
     height: 15px;
     margin-left: 10px;
-    margin-top: 1px;
-}
-img{
-    
-    width: 30px;
-    height: 30px;
-}
-.linkedin{
-    margin-top: 40px;
-    width: 30px;
-    height: 30px;
+    vertical-align: middle;
+  }
+  
+  .linkedin, .github, .leetcode {
     border: 0;
     outline: 0;
-}
-.github{
-    margin-top: 40px;
+    background: none;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.3s ease;
+  }
+  .leetcode img:hover{
+    transform: scale(1.2) ;
+  }
+  .linkedin img:hover{
+    transform: scale(1.2) ;
+  }
+.github img:hover{
+    transform: scale(1.2) ;
+  }
+
+  
+  img {
     width: 30px;
     height: 30px;
-    border: 0;
-    outline: 0;
-}
-.leetcode{
-    margin-top: 40px;
-    width: 30px;
-    height: 30px;
-    border: 0;
-    outline: 0;
-}
-.skills{
+  }
+  
+  /* Skills section */
+  .skills {
     width: 100%;
-}
-.skills h1{
-    margin-left: 10%;
-    margin-top: 2%;
-    color: #03A9F4;
-}
-.skills ul{
-    margin-top: 20px;
-    margin-left :100px ;
-    color: #fff;
-    width: 30%;
-    position: fixed;
+    margin-top: 40px;
+  }
+  
+  .skills h1 {
+    color: #03a9f4;
+    margin-left: 5%;
+    margin-bottom: 20px;
+  }
+  
+  .skills ul {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;   
-}
-.skills img{
+    margin-left: 5%;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .skills img {
     width: 40px;
     height: 40px;
-}
+    transition: transform 0.3s ease;
+  }
+  
+  .skills img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .profile-text {
+      margin-top: 5%;
+      width: 100%;
+    }
+  
+    .profile ul {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .skills ul {
+      gap: 15px;
+    }
+  
+    .skills img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-text {
+      margin-top: 5%;
+      width: 100%;
+    }
+  
+    .profile-text h1 {
+      font-size: 1.5rem;
+    }
+  
+    .profile-info p {
+      font-size: 0.9rem;
+    }
+  
+    .Download {
+      padding: 8px 15px;
+    }
+  
+    .skills ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .skills img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  

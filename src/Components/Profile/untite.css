@@ -1,0 +1,109 @@
+.profile-text{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.profile ul{
+    width: 30%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+
+}
+body{
+    background-color: #263238;
+}
+.profile-info p{
+    color: #fff;
+}
+.profile-text h3{
+    color: #fff;
+}
+.profile-text h1{
+    color: #03A9F4;
+}
+.profile-info{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+}
+.profile-image {
+    margin-right: 20%;
+    border-radius: 20px;
+
+
+}
+.profile-image img{
+    width: 200px;
+    height: 200px;
+    
+
+}
+.Download{
+    font-weight: 900;
+    margin-top: 40px;
+    background: #263238;
+    color: #03A9F4;
+    border-radius: 20px;
+    width: 200px;
+    height: 30px;
+    border-color: #03A9F4;
+    border-style: double;
+    outline:0;
+
+}
+.download-img{
+    width: 20px;
+    height: 15px;
+    margin-left: 10px;
+    margin-top: 1px;
+}
+img{
+    
+    width: 30px;
+    height: 30px;
+}
+.linkedin{
+    margin-top: 40px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    outline: 0;
+}
+.github{
+    margin-top: 40px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    outline: 0;
+}
+.leetcode{
+    margin-top: 40px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    outline: 0;
+}
+.skills{
+    width: 100%;
+}
+.skills h1{
+    margin-left: 10%;
+    margin-top: 2%;
+    color: #03A9F4;
+}
+.skills ul{
+    margin-top: 20px;
+    margin-left :100px ;
+    color: #fff;
+    width: 30%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;   
+}
+.skills img{
+    width: 40px;
+    height: 40px;
+}

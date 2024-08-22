@@ -62,9 +62,11 @@ const Resume = () => {
             <div className="certificates">
               <h2>Certificates</h2>
               <br />
-              <p>1. IBM Web Development Internship <br />
-                2. IBM  Placement Assistance Program <br />
-                3. TechMaghi Cyber Security and Ethical Hacking Workshop <br /> 
+              <p>1. IBM Web Development Internship <br/>
+                2. IBM  Placement Assistance Program <br/>
+                3. TechMaghi Cyber Security and Ethical Hacking Workshop <br/> 
+                4. NextWave Genarative Ai Workshop <br/>
+                5. Great Learning Introduction to Ai <br/>
               </p> <br />
               <a href="https://drive.google.com/drive/folders/1MsvEz4pWBUeszk7T1qsPPWgsesIJPZe0?usp=sharing">Click Here to See Certificates</a>
             </div>
