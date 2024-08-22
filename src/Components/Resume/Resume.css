@@ -171,6 +171,7 @@
     .box {
       width: 250px;
       height: 250px;
+      margin-left: 75px;
     }
   
     .content h1 {

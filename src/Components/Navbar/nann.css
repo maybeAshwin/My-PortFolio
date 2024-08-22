@@ -1,0 +1,176 @@
+import React, { useState } from 'react';
+import './Navbar.css';
+import { Link } from 'react-router-dom';
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className="navbar">
+      <h1 className="logo">Ashwin.</h1>
+      <div className={`nav-links ${isOpen ? 'open' : ''}`}>
+        <ul>
+          <li className="info"><Link to="/">Home</Link></li>
+          <li className="info"><Link to="/resume">Resume</Link></li>
+          <li><Link to="/contact" className="button">Contact Me</Link></li>
+        </ul>
+      </div>
+      <div className="hamburger" onClick={toggleMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
+
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #263238;
+    color: #fff;
+    position: relative;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: #03a9f4;
+  }
+  
+  .nav-links ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links ul li {
+    margin: 0 15px;
+  }
+  
+  .nav-links ul li a,
+  .nav-links ul li .button {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links ul li .button {
+    background-color: #03a9f4;
+    border-radius: 20px;
+    color: #263238;
+  }
+  
+  .nav-links ul li a:hover,
+  .nav-links ul li .button:hover {
+    color: #03a9f4;
+  }
+  
+  /* Hamburger menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Mobile view adjustments */
+  @media (max-width: 768px) {
+    .nav-links ul {
+      flex-direction: column;
+      background-color: #263238;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      height: 0;
+      overflow: hidden;
+      transition: height 0.3s ease;
+    }
+  
+    .nav-links.open ul {
+      height: 200px; /* Adjust based on the number of links */
+    }
+  
+    .nav-links ul li {
+      margin: 15px 0;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  
+
+
+  nav{
+    width: 100%;
+    background: #263238 ;
+    color: #03A9F4;
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+.logo{
+    width: 300px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 16px;
+    
+}
+.info {
+    position: relative;
+  }
+  
+.info::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1.5px;
+      border-radius: 4px;
+      background-color: #03A9F4;
+      bottom: 0;
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform .3s ease-in-out;
+    }
+.info:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
