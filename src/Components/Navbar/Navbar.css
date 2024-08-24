@@ -79,14 +79,16 @@
       height: 0;
       overflow: hidden;
       transition: height 0.3s ease;
+      
     }
   
     .nav-links.open ul {
-      height: 200px; /* Adjust based on the number of links */
+      height: 250px; /* Adjust based on the number of links */
     }
   
     .nav-links ul li {
       margin: 15px 0;
+      
     }
   
     .hamburger {
