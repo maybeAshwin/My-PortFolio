@@ -26,7 +26,7 @@ const Profile = () => {
         </div>
         <ul className='profile-'>
           <li>
-            <a href="/resume.pdf" download>
+            <a href="/Ashwin Joseph Resume.pdf" download>
               <button className='Download'>
                  <img className='download-img' src={downloadlogo} alt="Download" />
               </button>
