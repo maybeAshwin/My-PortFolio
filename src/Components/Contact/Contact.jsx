@@ -43,7 +43,7 @@ const Contact = () => {
             type="text"
             name="name"
             placeholder="Name"
-            value={formData.to_name}
+            value={formData.name}
             onChange={handleChange}
             required
           />
@@ -52,7 +52,7 @@ const Contact = () => {
             type="email"
             name="email"
             placeholder="E-mail"
-            value={formData.from_name}
+            value={formData.email}
             onChange={handleChange}
             required
           />
