@@ -107,10 +107,12 @@
   /* Leftside styling */
   .leftside {
     background-color: #263238;
-    margin: 5rem auto;
+    margin-left : 5rem auto;
     color: #fff;
     text-align: left;
   }
+  
+
   
   .leftside h2 {
     color: #03a9f4;
@@ -120,14 +122,13 @@
   .leftside li {
     list-style: none;
     font-size: 1.1rem;
-    margin-bottom: 1rem;
   }
   
   .divider {
     height: 2px;
     width: 100%;
     background-color: #274452;
-    margin: 20px 0;
+    margin: 2px 0;
   }
   
   .education {

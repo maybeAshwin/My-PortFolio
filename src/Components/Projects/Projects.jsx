@@ -1,34 +1,62 @@
-import React from 'react'
-import './Projects.css'
-import dementor from '../../Assets/dementor.png'
+import React, { useState } from 'react';
+import './Projects.css';
+import dementor from '../../Assets/dementor.png';
+import secondProjectImage from '../../Assets/seed.png'; // Add your second image here
+
+const ProjectCard = ({ image, link, description }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleCardClick = () => {
+    window.open(link, '_blank');
+  };
+
+  return (
+    <div 
+      className="container card-reveal"
+      onClick={handleCardClick}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div className="divider image-wrapper">
+        <img src={image} alt="Project" />
+        <div className={`card-text ${isHovered ? 'show' : ''}`}>
+          <p>{description}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const Projects = () => {
   return (
     <div className='main'>
       <div className="area">
         <h1>My Projects</h1>
-        <h2><a href="https://de-mentor.vercel.app/">De-Mentor</a></h2> 
-        <div className="container">
-          <div className='divider'>
-            <a href="https://de-mentor.vercel.app/" target="_blank" rel="noopener noreferrer">
-            <img src={dementor} alt="DeMentor" />
-            </a>
-          </div>
-          <div className='divider'>
-            
-            <p>
-            <span class=" highlight">its</span> a platform dedicated to helping individuals overcome addictions to drugs, alcohol, screens, and pornography. 
-            It provides resources, guidance, and community support to encourage healthier habits and personal growth. 
-            Through expert advice and practical strategies, 
-            the website empowers users to regain control of their lives and build a healthier future.
-            </p>
-          </div>
-        </div>
-        
-        <p></p>
+        <br />
+        <br />
+
+        <h2>De Mentor</h2>
+        <ProjectCard
+
+          image={dementor}
+          link="https://de-mentor.vercel.app/"
+          description="It’s a platform dedicated to helping individuals 
+          overcome addictions to drugs, alcohol, screens, and pornography. 
+          It provides resources, guidance, and community support to encourage
+           healthier habits and personal growth."
+        />
+
+        <h2>Seed</h2>
+        <ProjectCard
+          image={secondProjectImage}
+          link="https://github.com/abypious/Seed"
+          description="Smart Agriculture System that is an integrated platform 
+          to help farmers with real-time soil monitoring and crop suggestion based on IoT,
+           artificial intelligence (AI), and machine learning (ML)."
+        />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

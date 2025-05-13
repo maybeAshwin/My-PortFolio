@@ -20,7 +20,7 @@ const Resume = () => {
             effective applications according to client
             requirements.</p>
             <br />
-            <div className="divider"></div>
+            
             
             <h2>Skills</h2><br />
               <li>React</li>
@@ -28,7 +28,7 @@ const Resume = () => {
               <li>Web Devlopment</li>
               <li>Dart</li>
             <br />
-            <div className="divider"></div>
+            
             
             <h2>Education</h2>
             <br />
@@ -39,7 +39,7 @@ const Resume = () => {
                 <li><h3>GHSS EDAKKOLY</h3><br /><p>2007-2017 <br />High School <br />Kottayam,Kerala</p></li>
             </div>
             <br />
-            <div className="divider"></div>
+            
             <div className="social">
               <h2>Social Links</h2>
               <br />
@@ -48,7 +48,7 @@ const Resume = () => {
               <a href="https://leetcode.com/u/ashwinjoseph-/">Leet Code</a><br />
             </div> 
             <br /> 
-            <div className="divider"></div>
+           
             <div className="projects">
               
               <h2>Projects</h2>
@@ -56,9 +56,10 @@ const Resume = () => {
                 <a href="https://de-mentor.vercel.app/">1. De_Mentor a De addiction helper Website </a> <br />
                 <a href="">2. Bussines Calculator</a> <br />
                 <a href="">3. Chat application Landing page</a>
+                <a href="https://github.com/abypious/Seed">4. Seed Smart Agriculture</a>
             </div>
             <br />
-            <div className="divider"></div>
+       
             <div className="certificates">
               <h2>Certificates</h2>
               <br />
